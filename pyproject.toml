@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "test-poetry"
+version = "0.1.0"
+description = ""
+authors = ["KozynchenkoVS <kozynhcnekovyacheslav@gmail.com>"]
+readme = "README.md"
+packages = [{include = "test_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dagster = "^1.1.15"
+dagit = "^1.1.15"
+prefect = "^2.7.11"
+pytest = "^7.2.1"
+pandas = "^1.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
