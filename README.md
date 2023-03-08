@@ -1,7 +1,11 @@
 # Pipelines — ETL Framework
 
 ## Quickstart
-
+### Launching pipelines
+Execute bash script using following command:
+```bash
+bash execute_pipelines.sh
+```
 ### Initialization
 
 Create a new folder and run `pipelines init` inside of it.
