@@ -1,6 +1,12 @@
 # Pipelines — ETL Framework
 
 ## Quickstart
+
+### Starting docker
+Execute following command to start docker:
+```bash
+docker compose up -d --build
+```
 ### Launching pipelines
 Execute bash script using following command:
 ```bash

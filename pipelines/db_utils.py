@@ -19,6 +19,8 @@ def create_table_as(table : str, query : str):
     connection_to_db.create_function("domain_of_url", 1, domain_of_url)
     try:
         connection_to_db.execute("create table if not exists " + table + " AS " + query)
+        connection_to_db.commit()
+        connection_to_db.close()
     except Error as err:
         print("|ERROR|", err)
 

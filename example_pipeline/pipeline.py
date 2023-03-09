@@ -6,7 +6,7 @@ VERSION = '2023'
 
 
 TASKS = [
-    tasks.LoadFile(input_file='original/original.csv', table='original'),
+    tasks.LoadFile(input_file='../original/original.csv', table='original'),
     tasks.CTAS(
         table='norm',
         sql_query='''
