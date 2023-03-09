@@ -1,13 +1,15 @@
 FROM python:3.8
-ENV PYTHONUNBUFFERED=true
+ENV PYTHONUNBUFFERED=1
 
 RUN mkdir /app
 WORKDIR /app
 RUN mkdir /app/pipelines
 RUN mkdir /app/example_pipeline
+RUN mkdir /app/tests
 
 COPY /pipelines /app/pipelines
 COPY /example_pipeline /app/example_pipeline
+COPY /tests /app/tests
 COPY pyproject.toml /app
 COPY setup.py /app
 COPY execute_pipelines.sh /app
