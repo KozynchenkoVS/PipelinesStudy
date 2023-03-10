@@ -7,8 +7,8 @@ jobs:
   build_run:
     runs-on: ubuntu-latest
     steps:
-      - name: get linux tuils
-        run: sudo apt-get install bsdmainutils
+      - name: get linux utils
+        run: sudo apt-get install csvkit
       - uses: actions/checkout@v2
       - name: Build&Run container
         run: docker compose up -d --build
