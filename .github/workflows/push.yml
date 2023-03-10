@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get linux utils
-        run: sudo pip install csvkit 
+        run: |
+         sudo apt-get update
+         sudo apt-get install -y csvkit
       - uses: actions/checkout@v2
       - name: Build&Run container
         run: docker compose up -d --build
