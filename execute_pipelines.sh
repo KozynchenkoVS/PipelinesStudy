@@ -2,4 +2,5 @@
 poetry run pytest .
 cd example_pipeline
 poetry run pipeline run
-csvlook norm.csv 
+head -n10 norm.csv
+#csvlook norm.csv 
