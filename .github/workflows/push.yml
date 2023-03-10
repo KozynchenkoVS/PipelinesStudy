@@ -4,9 +4,11 @@ on:
     branches:
       - pipelines-08-03
 jobs:
-  test:
+  build&run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build container
+      - name: Build&Run container
         run: docker compose up -d --build
+      - name: Show Output
+        run: docker compose logs pipelines -t -f
