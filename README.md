@@ -7,6 +7,13 @@ Execute following command to start docker:
 ```bash
 docker compose up -d --build
 ```
+
+### Show docker container run output
+Execute following command to show container run logs:
+```bash
+docker compose logs pipelines -t -f
+```
+
 ### Launching pipelines
 Execute bash script using following command:
 ```bash
