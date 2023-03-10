@@ -1,0 +1,12 @@
+name: DockerComposeOnPush
+on:
+  push:
+    branches:
+      - pipelines-08-03
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build container
+        run: docker compose up -d --build
