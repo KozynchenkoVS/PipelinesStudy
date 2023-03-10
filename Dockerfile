@@ -21,4 +21,4 @@ RUN pip3 install poetry
 RUN poetry config virtualenvs.create false
 RUN poetry install
 
-ENTRYPOINT [ "sh", "/app/execute_pipelines.sh" ]
+ENTRYPOINT [ "bash", "/app/execute_pipelines.sh" ]
